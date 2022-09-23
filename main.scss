@@ -1,5 +1,17 @@
-//Tu codigo
+//customize variables
+$primary:#5265E1 ;
+$secondary:#FA5959 ;
+$info: white;
 
 
-//Bootstrap
+//import Bootstrap
 @import "./node_modules/bootstrap/scss/bootstrap";
+
+.image1{
+  z-index: 2;
+}
+.figure1{
+  z-index: 1;
+  top: -70%;
+  left: 27%;
+}
