@@ -231,12 +231,91 @@
       </div>
       <div class="row justify-content-center mt-5">
         <div class="col text-center">
-          <button class="btn btn-primary" type="submit">More info</button>
+          <button class="btn btn-primary mb-5" type="submit">More info</button>
         </div>
       </div>
     </div>
   </div>
+  <!--Exercici 5-->
+  <footer class="mt-5">
+    <div class="container bg-primary text-white  mt-5 pb-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-6 col-lg-5 text-center mt-5">
+          <h6>35.000+ ALREADY JOINED</h5>
+          <h2>Stay up-to-date with what we´re doing</h2>
+        </div>
+        <form action="" class="needs-validation" novalidate>
+          <div class="row  justify-content-center mt-5">
+            <div class=" col-12 col-md-5 col-lg-3 mb-1">
+              <div class="  form-outline position-relative">
+                <input type="email" class="form-control " id="inputEmail" placeholder="Enter your email address" required>
+                
+                <div class="invalid-tooltip">Whoops, make sure it´s an email</div>
+                </div>
+                
+            </div>
+            <div class=" d-grid col-12 col-md-3 col-lg-2">
+              <button type="submit" class="btn btn-secondary  text-white mb-1">Contact Us </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container container-footer dflex flex-column flex-md-row">
+      <nav class="navbar navbar-expand-sm container-fluid">
+        <div class="container-fluid justify-content-center justify-content-md-start my-4 col-md-4 col-lg-1 ms-lg-4">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo-bookmark.svg" alt="logo-bookmark">
+          </a>
+        </div>
+        <div class="container-fluid justify-content-center justify-content-lg-end mb-4 mt-md-5" >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-white text-center mb-3" href="#">FEATURES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center mb-3" href="#">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white text-center mb-3" href="#">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <div class="container-fluid justify-content-center justify-content-md-end">
+          <a href="#" class="social me-5">
+            <img src="./images/icon-facebook.svg" alt="facebook">
+          </a>
+          <a href="#" class="social me-lg-3">
+            <img src="./images/icon-twitter.svg" alt="twitter">
+          </a>
+        </div>
+      </nav>
+    </div>
+  </footer>
 
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+
 </html>
