@@ -47,12 +47,12 @@ $font-family-base:'Rubik', sans-serif;
   width: auto;
   height: 8rem;
 }
-.card2{
+/*.card2{
   top: 10%;
 }
 .card3{
   top: 20%;
-}
+}*/
 .accordion-header{
   border-top: 1px solid gray;
 }
@@ -87,4 +87,20 @@ $font-family-base:'Rubik', sans-serif;
 .btn-secondary:hover{
   background-color: white !important;
   color: $secondary !important;
+}
+%card{
+  position: relative;
+  text-align: center;
+}
+.card:nth-child(1){
+  @extend %card;
+
+}
+.card:nth-child(2){
+  @extend %card;
+  top: 10%;
+}
+.card:nth-child(3){
+  @extend %card;
+  top: 20%;
 }
