@@ -62,3 +62,29 @@ $font-family-base:'Rubik', sans-serif;
 .container-footer{
   background-color: #293462;
 }
+.navbar .nav-link:hover {
+  color: $secondary !important ;
+}
+.navbar .btn:hover {
+  background-color: transparent;
+}
+.btn-primary:hover{
+  background-color: transparent !important;
+  color: $primary !important;
+}
+.btn-light:hover{
+  border-color: gray !important;
+}
+.nav-tabs .nav-item .nav-link:hover{
+  color: $secondary !important;
+}
+.card .card-body .btn-primary:hover{
+  background-color: transparent;
+}
+.accordion .accordion-item .accordion-header .accordion-button:hover{
+  color: $secondary;
+}
+.btn-secondary:hover{
+  background-color: white !important;
+  color: $secondary !important;
+}
